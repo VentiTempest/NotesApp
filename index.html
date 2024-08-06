@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <page-header></page-header>
+    <div>
+    <masuk-teks></masuk-teks>
+    <form>
+        <label>ID notes</label>
+        <input type ="text" id="idNotes">
+        <label>Judul notes</label>
+        <input type="text" id ="titleNotes">
+        <p>
+        </p>
+        <label>Isi notes</label>
+        <textarea id = "body" name ="isiNotes" rows = "4" cols="50">
+        </textarea>
+        <p>
+        </p>
+        <button id="InsertButton">Insert</button>
+        <button id="ShowButton">Show</button>
+        <button id="UpdateButton">Update</button>
+        <button id="DeleteButton">Delete</button>
+    </form>
+    </div>
+    <div>
+    <h1> Isi notes</h1>
+    </div>
+    <div id="notesData" class="grid-container"></div>
+    <script type = "module" src="Source/main.js"></script>
+    <ini-footer></ini-footer>
+</body>
+</html>
